@@ -34,8 +34,8 @@ function motionAt(seconds, offset = 0) {
   if (RHYTHM === "linear") return 1 - Math.abs(2 * phase - 1);
   return 0.5 - 0.5 * Math.cos(2 * Math.PI * phase);
 }
-const MIN_ANGLE_SCALE = 0.25;
-const MAX_ANGLE_SCALE = 1.00;
+const MIN_ANGLE_SCALE = 0.05;
+const MAX_ANGLE_SCALE = 3.00;
 
 function setup() {
   const canvas = createCanvas(720, 960);
